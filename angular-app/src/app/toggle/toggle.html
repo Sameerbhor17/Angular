@@ -1,0 +1,17 @@
+<div style="text-align: center;">
+<h1>Toggle Divs using if-else</h1>
+@if(display == true) {
+    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: orange; cursor: pointer;" (click)="display=false;"></div>
+} @else {
+    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: lightgreen; cursor: pointer;" (click)="display=true;"></div>
+}
+
+<h1>Hide - Show Divs using Button Click</h1>
+<button style="width: 100px; height: 50px; border-radius: 10px; cursor: pointer;" (click)="toggle();">{{display ? 'hide' : 'show'}}</button>
+<br><br>
+@if(display == true) {
+    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: blue; cursor: pointer;" (click)="display=false;"></div>
+} @else {
+    <div style="width: 150px; height: 150px; border-radius: 10px; background-color: gold; cursor: pointer;" (click)="display=true;" hidden></div>
+}
+</div>
