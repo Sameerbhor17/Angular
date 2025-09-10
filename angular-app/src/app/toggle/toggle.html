@@ -1,17 +1,48 @@
 <div style="text-align: center;">
-<h1>Toggle Divs using if-else</h1>
-@if(display == true) {
-    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: orange; cursor: pointer;" (click)="display=false;"></div>
+<h1>Toggle Divs using &#64;if-&#64;else directives</h1>
+@if(show == true) {
+    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: orange; cursor: pointer;" (click)="show=false;"></div>
 } @else {
-    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: lightgreen; cursor: pointer;" (click)="display=true;"></div>
+    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: lightgreen; cursor: pointer;" (click)="show=true;"></div>
 }
 
 <h1>Hide - Show Divs using Button Click</h1>
-<button style="width: 100px; height: 50px; border-radius: 10px; cursor: pointer;" (click)="toggle();">{{display ? 'hide' : 'show'}}</button>
-<br><br>
-@if(display == true) {
+@if(display === true) {
     <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: blue; cursor: pointer;" (click)="display=false;"></div>
 } @else {
     <div style="width: 150px; height: 150px; border-radius: 10px; background-color: gold; cursor: pointer;" (click)="display=true;" hidden></div>
 }
+<br><br>
+<button class="btn" (click)="toggle();">{{display ? 'Hide' : 'Show'}}</button>
+<br><br>
+
+<h1>Design the Traffic Signal Pole using &#64;Switch Directive</h1>
+<button class="btn bg-red" (click)="trafficSignal('red');">Red</button>
+<button class="btn bg-yellow" (click)="trafficSignal('yellow');">Yellow</button>
+<button class="btn bg-green" (click)="trafficSignal('green');">Green</button>
+<br><br>
+    <div class="traffic-signal-pole">
+        @switch(signalindicator) {
+            @case('red') {
+                <div class="signal" [ngClass]="signalindicator === 'red' ? 'bg-red' : ''"></div><br>
+                <div class="signal"></div><br>
+                <div class="signal"></div><br><br>
+            }
+            @case('yellow') {
+                <div class="signal"></div><br>
+                <div class="signal" [ngClass]="signalindicator === 'yellow' ? 'bg-yellow' : ''"></div><br>
+                <div class="signal"></div><br><br>
+            }
+            @case('green') {
+                <div class="signal"></div><br>
+                <div class="signal"></div><br>
+                <div class="signal" [ngClass]="signalindicator === 'green' ? 'bg-green' : ''"></div><br><br>
+            }
+            @default {
+                <div class="signal bg-red"></div><br>
+                <div class="signal bg-yellow"></div><br>
+                <div class="signal bg-green"></div><br><br>
+            }
+        }
+    </div>
 </div>
