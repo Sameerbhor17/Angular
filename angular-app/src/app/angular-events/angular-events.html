@@ -1,0 +1,18 @@
+
+<div style="text-align: center;">
+    <h1>Event: Any Action performed on UI by the user</h1>
+    <h1>Click Event in Angular</h1>
+    <button style="cursor: pointer" (click)="handleEvent($event)">Click Me</button>
+    <br><br>
+    <h1>Input, Focus and Blur Events in Angular</h1>
+    <input placeholder="Input event" type="text" (input)="handleEvent($event)"/>
+    <br><br>
+    <input placeholder="focus event" (focus)="handleEvent($event)"/>
+    <br><br>
+    <input placeholder="blur event" (blur)="handleEvent($event)"/>
+    <br><br>
+    <h1>Mouseenter and Mouseleave Events in Angular</h1>
+    <div style="margin:auto; width: 100px; height: 100px; border: 1px solid black; background: rgba(24, 110, 118, 0.533)" (mouseenter)="handleEvent($event)"></div>
+    <br>
+    <div style="margin:auto; width: 100px; height: 100px; border: 1px solid black; background: rgb(195, 183, 27);" (mouseleave)="handleEvent($event)"></div>
+</div>
