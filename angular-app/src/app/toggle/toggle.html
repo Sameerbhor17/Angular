@@ -1,26 +1,26 @@
 <div style="text-align: center;">
-<h1>Toggle Divs using &#64;if-&#64;else directives</h1>
-@if(show == true) {
-    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: orange; cursor: pointer;" (click)="show=false;"></div>
-} @else {
-    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: lightgreen; cursor: pointer;" (click)="show=true;"></div>
-}
+    <h1>Toggle Divs using &#64;if-&#64;else directives</h1>
+    @if(show == true) {
+        <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: orange; cursor: pointer;" (click)="show=false;"></div>
+    } @else {
+        <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: lightgreen; cursor: pointer;" (click)="show=true;"></div>
+    }
 
-<h1>Hide - Show Divs using Button Click</h1>
-@if(display === true) {
-    <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: blue; cursor: pointer;" (click)="display=false;"></div>
-} @else {
-    <div style="width: 150px; height: 150px; border-radius: 10px; background-color: gold; cursor: pointer;" (click)="display=true;" hidden></div>
-}
-<br><br>
-<button class="btn" (click)="toggle();">{{display ? 'Hide' : 'Show'}}</button>
-<br><br>
+    <h1>Hide - Show Divs using Button Click</h1>
+    @if(display === true) {
+        <div style="margin: auto; width: 150px; height: 150px; border-radius: 10px; background-color: blue; cursor: pointer;" (click)="display=false;"></div>
+    } @else {
+        <div style="width: 150px; height: 150px; border-radius: 10px; background-color: gold; cursor: pointer;" (click)="display=true;" hidden></div>
+    }
+    <br><br>
+    <button class="btn" (click)="toggle();">{{display ? 'Hide' : 'Show'}}</button>
+    <br><br>
 
-<h1>Design the Traffic Signal Pole using &#64;Switch Directive</h1>
-<button class="btn bg-red" (click)="trafficSignal('red');">Red</button>
-<button class="btn bg-yellow" (click)="trafficSignal('yellow');">Yellow</button>
-<button class="btn bg-green" (click)="trafficSignal('green');">Green</button>
-<br><br>
+    <h1>Design the Traffic Signal Pole using &#64;Switch Directive</h1>
+    <button class="btn bg-red" (click)="trafficSignal('red');">Red</button>
+    <button class="btn bg-yellow" (click)="trafficSignal('yellow');">Yellow</button>
+    <button class="btn bg-green" (click)="trafficSignal('green');">Green</button>
+    <br><br>
     <div class="traffic-signal-pole">
         @switch(signalindicator) {
             @case('red') {
@@ -45,4 +45,16 @@
             }
         }
     </div>
+    <br><br>
+
+    <h1>Display the Users from the Array using &#64;For Loop Directive</h1>
+    @for(user of userList; track user) {
+        <h3>{{ user }}</h3>
+    }
+    <br>
+    <h1>Display the Employee and their Salary from the Multidimensional Array using &#64;For Loop Directive</h1>
+    @for(employee of employeeDetails; track employee.name) {
+        <span><b>{{ employee.name }}</b></span> -
+        <span>Rs.{{ employee.salary }}</span><br>
+    }
 </div>
