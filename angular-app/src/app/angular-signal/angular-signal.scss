@@ -1,0 +1,21 @@
+.signal-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-div {
+    cursor: pointer;
+    width: 100px; 
+    height: 50px; 
+    border-radius: 10px;
+}
+
+.signal-val {
+    margin-left: 100px; 
+    margin-right: 100px; 
+    border: 2px solid black; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
