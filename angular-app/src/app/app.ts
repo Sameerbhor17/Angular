@@ -4,6 +4,7 @@ import { Counter } from './counter-app/counter-app';
 import { Toggle } from './toggle/toggle';
 import { AngularEvents } from './angular-events/angular-events';
 import { AngularSignal } from './angular-signal/angular-signal';
+import { TwoWayBinding } from './two-way-binding/two-way-binding';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { AngularSignal } from './angular-signal/angular-signal';
     Toggle,
     AngularEvents,
     AngularSignal,
+    TwoWayBinding,
     RouterOutlet, 
   ],
   templateUrl: './app.html',
