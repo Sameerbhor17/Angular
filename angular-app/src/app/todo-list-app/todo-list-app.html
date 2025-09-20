@@ -1,0 +1,16 @@
+<div class="text-center">
+    <h1>Todo List Application using Angular</h1>
+    <br>
+    <b>Enter the Task to add in a TODO List: </b>
+    <input type="text" placeholder="Enter the Task" [(ngModel)]="task">
+    <button (click)="addTask();" style="margin-left: 2%;">Add</button>
+
+    @for(task of taskList; track task.id) {
+        <ul class="task-list">
+            <li>{{task.id}}</li>
+            <li>{{task.name}}</li>
+            <button (click)="deleteTask(task.id);">Delete</button>
+        </ul>
+    }
+
+</div>

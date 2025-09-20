@@ -5,6 +5,7 @@ import { Toggle } from './toggle/toggle';
 import { AngularEvents } from './angular-events/angular-events';
 import { AngularSignal } from './angular-signal/angular-signal';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
+import { TodoListApp } from './todo-list-app/todo-list-app';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
     AngularEvents,
     AngularSignal,
     TwoWayBinding,
+    TodoListApp,
     RouterOutlet, 
   ],
   templateUrl: './app.html',
