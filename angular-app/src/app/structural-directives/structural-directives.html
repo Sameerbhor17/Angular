@@ -1,0 +1,23 @@
+<div class="text-center">
+    <h1>*ngFor Directive in Angular</h1>
+    <ul *ngFor="let student of studentList" style="list-style: none;">
+        <li>{{student}}</li>
+    </ul>
+    <br>
+    <h1>*ngIf Directive in Angular</h1>
+    <div *ngIf="show === true;" class="block"></div>
+    <br>
+    <h1>*ngSwitch Directive in Angular</h1>
+    <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'" class="block" style="background: red;">Red Color</div>
+        <div *ngSwitchCase="'green'" class="block" style="background: green;">Green Color</div>
+        <div *ngSwitchCase="'yellow'" class="block" style="background: yellow;">Yellow Color</div>
+        <div *ngSwitchCase="'pink'" class="block" style="background: pink;">Pink Color</div>
+        <div *ngSwitchCase="'violet'" class="block" style="background: violet">Violet Color</div>
+        <div *ngSwitchCase="'cream'" class="block" style="background: chocolate;">Cream Color</div>
+        <div *ngSwitchCase="'gold'" class="block" style="background: gold;">Gold Color</div>
+        <div *ngSwitchCase="'orange'" class="block" style="background: orange;">Orange Color</div>
+        <div *ngSwitchDefault class="block">No Color (Default Div)</div>
+    </div>
+    <br>
+</div>
