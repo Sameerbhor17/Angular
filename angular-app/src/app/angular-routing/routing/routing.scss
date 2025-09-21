@@ -1,0 +1,22 @@
+.router-div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 200px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: 2px solid;
+    font-weight: 600;
+}

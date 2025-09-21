@@ -1,0 +1,23 @@
+<div class="text-center">
+    <h1>Routing in Angular</h1>
+</div>
+<br>
+<div class="router-div">
+    <h1>Logo</h1>
+    <nav>
+        <ul>
+            <li>
+                <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" routerLink="/">Home</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" routerLink="login">Login</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" routerLink="about">About</a>
+            </li>
+            <li>
+                <a routerLinkActive="active" routerLink="contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
