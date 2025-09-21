@@ -7,7 +7,8 @@ import { AngularSignal } from './angular-signal/angular-signal';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { TodoListApp } from './todo-list-app/todo-list-app';
 import { StructuralDirectives } from './structural-directives/structural-directives';
-import { Routing } from './angular-routing/routing/routing';
+import { Routing } from './angular-routing/basic-routing/routing/routing';
+import { DynamicRouting } from './angular-routing/dynamic-routing/dynamic-routing';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { Routing } from './angular-routing/routing/routing';
     TodoListApp,
     StructuralDirectives,
     Routing,
+    DynamicRouting,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 

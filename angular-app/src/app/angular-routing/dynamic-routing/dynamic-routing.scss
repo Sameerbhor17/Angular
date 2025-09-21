@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+
+.user-route {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.active-user {
+    border-bottom: 2px solid;
+    font-weight: 600;
+}

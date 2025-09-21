@@ -1,0 +1,13 @@
+<div class="text-center">
+    <h1>Dynamic Routing in Angular</h1>
+    <br>
+    <div class="user-route">
+        @for(user of usersList; track user.id) {
+            <ul>
+                <li>
+                    <a [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active-user" routerLink="user/{{user.id}}/{{user.name}}">{{user.name}}</a>
+                </li>
+            </ul>
+        }
+    </div>
+</div>
