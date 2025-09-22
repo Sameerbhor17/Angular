@@ -1,3 +1,22 @@
 <div class="text-center">
     <h1>Welcome on Home Page!</h1>
+    <hr>
+    <h1>Pass the Data between the Pages in Angular</h1>
+    <h2>1. Passing Data between the Pages using RouterLink</h2>
+    <ul>
+        <li>
+            <a [routerLink]="['profile', {name: 'Sameer Bhor'}]">Go to Profile</a>
+        </li>
+        <li>
+            <a [routerLink]="['profile', {name: 'Peter Siddle'}]">Go to Profile</a>
+        </li>
+    </ul>
+    <br>
+    <h2>2. Passing Data between the Pages using Button Click</h2>
+    <div style="display: flex; justify-content: space-evenly;">
+        <button (click)="goToPaexskinProfile();">Go to Profile</button>
+        <button (click)="goToMNCs();">Go to Profile</button>
+    </div>
+    <h2>3. Passing Data between the Pages using Router</h2>
+    <a routerLink="profile">Go to Profile</a>
 </div>
