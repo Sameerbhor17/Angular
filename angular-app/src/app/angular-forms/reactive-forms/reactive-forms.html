@@ -1,0 +1,18 @@
+<div class="text-center">
+    <h1>Reactive Forms in Angular</h1>
+    <input placeholder="enter username" [formControl]="username" />
+    <br><br>
+    <input placeholder="enter password" [formControl]="password" />
+    <br><br>
+    <input placeholder="enter email" [formControl]="email" />
+    <br><br>
+    <input placeholder="enter mobile" [formControl]="mobile" />
+    <br><br>
+    <button style="margin-right: 20px;" (click)="clearInfo();">Clear</button>
+    <button (click)="sendInfo();">Submit</button>
+    <button style="margin-left: 20px;" (click)="setInfo();">SetInfo</button>
+
+    @for(item of formData; track item) {
+        <p>{{item}}</p>
+    }
+</div>

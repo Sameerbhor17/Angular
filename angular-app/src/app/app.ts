@@ -9,6 +9,7 @@ import { TodoListApp } from './todo-list-app/todo-list-app';
 import { StructuralDirectives } from './structural-directives/structural-directives';
 import { Routing } from './angular-routing/basic-routing/routing/routing';
 import { DynamicRouting } from './angular-routing/dynamic-routing/dynamic-routing';
+import { ReactiveForms } from './angular-forms/reactive-forms/reactive-forms';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { DynamicRouting } from './angular-routing/dynamic-routing/dynamic-routin
     StructuralDirectives,
     Routing,
     DynamicRouting,
+    ReactiveForms,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 

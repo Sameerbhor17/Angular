@@ -4,7 +4,7 @@ import { Login } from './angular-routing/basic-routing/login/login';
 import { About } from './angular-routing/basic-routing/about/about';
 import { Contact } from './angular-routing/basic-routing/contact/contact';
 import { PageNotFound } from './angular-routing/basic-routing/page-not-found/page-not-found';
-import { Users } from './angular-routing/users/users';
+import { Users } from './angular-routing/dynamic-routing/users/users';
 import { PassDataBetweenPages } from './angular-routing/pass-data-between-pages/pass-data-between-pages';
 
 export const routes: Routes = [
