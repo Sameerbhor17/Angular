@@ -10,6 +10,7 @@ import { StructuralDirectives } from './structural-directives/structural-directi
 import { Routing } from './angular-routing/basic-routing/routing/routing';
 import { DynamicRouting } from './angular-routing/dynamic-routing/dynamic-routing';
 import { ReactiveForms } from './angular-forms/reactive-forms/reactive-forms';
+import { ReactiveFormsFormgroups } from './angular-forms/reactive-forms/reactive-forms-formgroups/reactive-forms-formgroups';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { ReactiveForms } from './angular-forms/reactive-forms/reactive-forms';
     Routing,
     DynamicRouting,
     ReactiveForms,
+    ReactiveFormsFormgroups,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 

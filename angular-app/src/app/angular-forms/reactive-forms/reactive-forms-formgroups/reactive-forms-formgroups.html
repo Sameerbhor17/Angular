@@ -1,0 +1,30 @@
+<div class="text-center">
+    <h1>FormGroup Property under Reactive Forms in Angular</h1>
+    <form [formGroup]="formData">
+        <input type="text" placeholder="Enter Name" formControlName="name">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Password" formControlName="password">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Email ID" formControlName="email">
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Mobile Number" formControlName="mobile">
+        <br>
+        <br>
+        <button (click)="formData.reset();">Clear</button>
+        <button style="margin-left: 20px;" (click)="submitFormData()">Submit</button>
+        <button style="margin-left: 20px;" (click)="setData();">SetData</button>
+        <button style="margin-left: 20px;" (click)="show=true;">ShowData</button>
+        <br>
+        <div *ngIf="show == true">
+            <ul>
+                <li>{{formData.value.name}}</li>
+                <li>{{formData.value.password}}</li>
+                <li>{{formData.value.email}}</li>
+                <li>{{formData.value.mobile}}</li>
+            </ul>
+        </div>
+    </form>
+</div>
