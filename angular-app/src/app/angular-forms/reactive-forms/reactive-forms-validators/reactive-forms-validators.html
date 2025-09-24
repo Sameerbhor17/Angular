@@ -1,0 +1,22 @@
+<div class="text-center">
+    <h1>Validators Property under Reactive Forms in Angular</h1>
+    <form [formGroup]="loginForm">
+        <input type="text" placeholder="Enter Name" formControlName="name">
+        <span class="error" *ngIf="name?.hasError('required') && name?.invalid && (name?.dirty || name?.touched)"> Required</span>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Password" formControlName="password">
+        <span class="error" *ngIf="password?.touched && password?.hasError('required')"> Required</span>
+        <span class="error" *ngIf="password?.touched && password?.invalid"> Invalid Password!</span>
+        <br>
+        <br>
+        <button (click)="loginForm.reset();">Clear</button>
+        <button style="margin-left: 20px;" (click)="submitFormData()">Submit</button>
+        <button style="margin-left: 20px;" (click)="show=true;">ShowData</button>
+        <br>
+        <div *ngIf="show == true">
+            <h4>{{loginForm.value.name}}</h4>
+            <h4>{{loginForm.value.password}}</h4>
+        </div>
+    </form>
+</div>
