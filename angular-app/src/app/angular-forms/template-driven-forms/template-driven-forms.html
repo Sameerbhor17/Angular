@@ -1,0 +1,20 @@
+<div class="text-center">
+    <h1>Template Driven Forms in Angular</h1>
+    <br>
+    <form #templateForm="ngForm" (ngSubmit)="submitInfo(templateForm.value)">
+        <input type="text" name="name" placeholder="Enter User Name" ngModel>
+        <br>
+        <br>
+        <input type="password" name="password" placeholder="Enter Password" ngModel>
+        <br>
+        <br>
+        <input type="range" name="range" ngModel />
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <h2>Template Driven Form Output</h2>
+    <h3>{{formData?.name}}</h3>
+    <h3>{{formData?.password}}</h3>
+    <h3>{{formData?.range}}</h3>
+</div>

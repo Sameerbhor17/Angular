@@ -12,6 +12,7 @@ import { DynamicRouting } from './angular-routing/dynamic-routing/dynamic-routin
 import { ReactiveForms } from './angular-forms/reactive-forms/reactive-forms';
 import { ReactiveFormsFormgroups } from './angular-forms/reactive-forms/reactive-forms-formgroups/reactive-forms-formgroups';
 import { ReactiveFormsValidators } from './angular-forms/reactive-forms/reactive-forms-validators/reactive-forms-validators';
+import { TemplateDrivenForms } from './angular-forms/template-driven-forms/template-driven-forms';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,7 @@ import { ReactiveFormsValidators } from './angular-forms/reactive-forms/reactive
     ReactiveForms,
     ReactiveFormsFormgroups,
     ReactiveFormsValidators,
+    TemplateDrivenForms,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
