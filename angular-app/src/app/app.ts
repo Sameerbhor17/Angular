@@ -14,6 +14,7 @@ import { ReactiveFormsFormgroups } from './angular-forms/reactive-forms/reactive
 import { ReactiveFormsValidators } from './angular-forms/reactive-forms/reactive-forms-validators/reactive-forms-validators';
 import { TemplateDrivenForms } from './angular-forms/template-driven-forms/template-driven-forms';
 import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-child';
+import { CurrencyConvertor } from './currency-convertor/currency-convertor';
 
 @Component({
   selector: 'app-root',
@@ -32,6 +33,7 @@ import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-c
     ReactiveFormsValidators,
     TemplateDrivenForms,
     PassDataParentChild,
+    CurrencyConvertor,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
