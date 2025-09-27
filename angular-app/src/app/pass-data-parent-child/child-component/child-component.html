@@ -1,0 +1,8 @@
+<div class="text-center">
+    @for(user of users; track user) {
+        <p>{{user}}</p>
+    }
+    <h2>2. Passing the data from Child to Parent</h2>
+    <!-- <button (click)="getSubjectList.emit(subjectList);">Display Child Data</button> -->
+    <button (click)="sendData();">Display Subjects</button>
+</div>

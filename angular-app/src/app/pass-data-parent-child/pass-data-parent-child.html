@@ -1,0 +1,8 @@
+<div class="text-center">
+    <h1>Passing Data Between Parent and Child Components</h1>
+    <h2>1. Passing the data from Parent to Child</h2>
+    <app-child-component [users]="userList" (getSubjectList)="getSubjectList($event)"></app-child-component>
+    @for(subject of subjects; track subject) {
+        <p>{{subject}}</p>
+    }
+</div>

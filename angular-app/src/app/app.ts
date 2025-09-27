@@ -13,6 +13,7 @@ import { ReactiveForms } from './angular-forms/reactive-forms/reactive-forms';
 import { ReactiveFormsFormgroups } from './angular-forms/reactive-forms/reactive-forms-formgroups/reactive-forms-formgroups';
 import { ReactiveFormsValidators } from './angular-forms/reactive-forms/reactive-forms-validators/reactive-forms-validators';
 import { TemplateDrivenForms } from './angular-forms/template-driven-forms/template-driven-forms';
+import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-child';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,7 @@ import { TemplateDrivenForms } from './angular-forms/template-driven-forms/templ
     ReactiveFormsFormgroups,
     ReactiveFormsValidators,
     TemplateDrivenForms,
+    PassDataParentChild,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
