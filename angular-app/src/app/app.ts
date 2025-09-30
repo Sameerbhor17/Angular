@@ -15,6 +15,7 @@ import { ReactiveFormsValidators } from './angular-forms/reactive-forms/reactive
 import { TemplateDrivenForms } from './angular-forms/template-driven-forms/template-driven-forms';
 import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-child';
 import { CurrencyConvertor } from './currency-convertor/currency-convertor';
+import { AngularLifeCycleHooks } from './angular-life-cycle-hooks/angular-life-cycle-hooks';
 
 @Component({
   selector: 'app-root',
@@ -34,6 +35,7 @@ import { CurrencyConvertor } from './currency-convertor/currency-convertor';
     TemplateDrivenForms,
     PassDataParentChild,
     CurrencyConvertor,
+    AngularLifeCycleHooks,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
