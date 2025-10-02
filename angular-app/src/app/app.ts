@@ -16,6 +16,7 @@ import { TemplateDrivenForms } from './angular-forms/template-driven-forms/templ
 import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-child';
 import { CurrencyConvertor } from './currency-convertor/currency-convertor';
 import { AngularLifeCycleHooks } from './angular-life-cycle-hooks/angular-life-cycle-hooks';
+import { StaticDataService } from './static-data-service/static-data-service';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +37,7 @@ import { AngularLifeCycleHooks } from './angular-life-cycle-hooks/angular-life-c
     PassDataParentChild,
     CurrencyConvertor,
     AngularLifeCycleHooks,
+    StaticDataService,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
