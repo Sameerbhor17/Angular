@@ -1,0 +1,16 @@
+<div class="text-center">
+    <h1>Fetching Products API Data via Angular Services</h1>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+  @for(product of productData; track product.id) {
+    <ul style="list-style: none; flex: 1 1 calc(30% - 20px); box-sizing: border-box; border: 1px solid #ccc; padding: 10px; border-radius: 8px; text-align: center;">
+      <li>
+        <img src="{{ product.thumbnail }}" alt="image" style="width: 100%; height: auto; border-radius: 8px;"/>
+      </li>
+      <li><strong>{{ product.title }}</strong></li>
+      <li>{{ product.price | currency }}</li>
+      <li>⭐ {{ product.rating }}</li>
+    </ul>
+  }
+</div>

@@ -17,6 +17,7 @@ import { PassDataParentChild } from './pass-data-parent-child/pass-data-parent-c
 import { CurrencyConvertor } from './currency-convertor/currency-convertor';
 import { AngularLifeCycleHooks } from './angular-life-cycle-hooks/angular-life-cycle-hooks';
 import { StaticDataService } from './static-data-service/static-data-service';
+import { AsyncProductDataService } from './async-product-data-service/async-product-data-service';
 
 @Component({
   selector: 'app-root',
@@ -38,6 +39,7 @@ import { StaticDataService } from './static-data-service/static-data-service';
     CurrencyConvertor,
     AngularLifeCycleHooks,
     StaticDataService,
+    AsyncProductDataService,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
