@@ -18,6 +18,7 @@ import { CurrencyConvertor } from './currency-convertor/currency-convertor';
 import { AngularLifeCycleHooks } from './angular-life-cycle-hooks/angular-life-cycle-hooks';
 import { StaticDataService } from './static-data-service/static-data-service';
 import { AsyncProductDataService } from './async-product-data-service/async-product-data-service';
+import { FakeApiFetchUsers } from './fake-api-fetch-users/fake-api-fetch-users';
 
 @Component({
   selector: 'app-root',
@@ -40,6 +41,7 @@ import { AsyncProductDataService } from './async-product-data-service/async-prod
     AngularLifeCycleHooks,
     StaticDataService,
     AsyncProductDataService,
+    FakeApiFetchUsers,
     RouterLink,
     RouterLinkActive,
     RouterOutlet, 
