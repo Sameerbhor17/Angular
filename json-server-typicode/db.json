@@ -1,0 +1,34 @@
+{
+  "users": [
+    { 
+        "id": "1",
+        "name": "Suraj",
+        "salary": 10000
+    },
+    { 
+        "id": "2", 
+        "name": "Virat", 
+        "salary": 10000
+    },
+    { 
+        "id": "3", 
+        "name": "Rohit", 
+        "salary": 50000
+    },
+    { 
+        "id": "4", 
+        "name": "Raj", 
+        "salary": 80000
+    },
+    { 
+        "id": "5", 
+        "name": "Hardik", 
+        "salary": 30000
+    },
+    { 
+        "id": "6", 
+        "name": "Axar", 
+        "salary": 25000
+    }
+  ]
+}
