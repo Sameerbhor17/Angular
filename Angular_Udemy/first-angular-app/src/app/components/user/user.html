@@ -1,9 +1,17 @@
 <div>
     <!-- Showing Selected User Name using Event Binding Concept in Angular (onSelectUser() method gets called on click event) -->
     <button (click)="onSelectUser()">
+        <img [src]="imagePath" alt="name">         
+        <span>{{ name }}</span>
+
         <!-- Showing Selected User Image using Property Binding Concept in Angular (imagePath is a getter property) -->
-        <img [src]="imagePath" alt="selectedUser().name">
+        <!-- <img [src]="imagePath" alt="selectedUser.name"> -->
+
+        <!-- Showing Selected User Image using imagePath() computed signal --> 
+        <!-- <img [src]="imagePath()" [alt]="selectedUser().name"> -->
+
         <!-- Showing Selected User Name using Interpolation in Angular (We can access all public properties via interpolation) -->
-        <span>{{ selectedUser().name }}</span>
+        <!-- <span>{{ selectedUser().name }}</span> -->
+
     </button>
 </div>
