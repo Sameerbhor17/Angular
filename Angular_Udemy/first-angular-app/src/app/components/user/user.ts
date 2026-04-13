@@ -2,7 +2,7 @@
 // import { DUMMY_USERS } from '../../dummy-users';
 // const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
-import { Component, Input } from '@angular/core';
+import { Component, computed, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -13,6 +13,12 @@ import { Component, Input } from '@angular/core';
 export class User {
   @Input({required: true}) avatar!: string;
   @Input({required: true}) name !: string;
+
+  // avatar = input.required<string>();
+  // name = input.required<string>();
+  // imagePath = computed(() => {
+  //   return 'assets/users/' + this.avatar;
+  // })
 
   // public selectedUser = DUMMY_USERS[randomIndex];
   // public selectedUser = signal(DUMMY_USERS[randomIndex]);
