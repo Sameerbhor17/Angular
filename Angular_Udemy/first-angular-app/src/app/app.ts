@@ -10,5 +10,9 @@ import { DUMMY_USERS } from './dummy-users';
   styleUrl: './app.scss'
 })
 export class App {
-  users = DUMMY_USERS;
+  public users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    alert("Selected User with ID: "+id);
+  }
 }
