@@ -3,10 +3,12 @@ import { Header } from './components/header/header';
 import { User } from './components/user/user';
 import { DUMMY_USERS } from './dummy-users';
 import { Tasks } from './components/tasks/tasks';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, User, Tasks],
+  // imports: [Header, User, Tasks],
+  imports: [Header, User, Tasks, NgFor, NgIf],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -24,4 +26,5 @@ export class App {
     // alert("Selected User with ID: "+id);
     this.selectedUserId = id;
   }
-}
+}import { from } from 'rxjs';
+
