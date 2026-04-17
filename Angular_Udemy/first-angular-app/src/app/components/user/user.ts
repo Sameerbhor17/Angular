@@ -28,6 +28,7 @@ export class User {
   // @Input({required: true}) avatar!: string;
   // @Input({required: true}) name !: string;
   @Input({required: true}) user !: Users;
+  @Input({required: true}) selected !: boolean;
   @Output() select = new EventEmitter<string>();
 
   // avatar = input.required<string>();

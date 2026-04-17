@@ -1,6 +1,6 @@
 <div>
     <!-- Showing Selected User Name using Event Binding Concept in Angular (onSelectUser() method gets called on click event) -->
-    <button (click)="onSelectUser()">
+    <button [class.active]="selected" (click)="onSelectUser()">
         <!-- Showing Selected User Image using Property Binding Concept in Angular (imagePath is a getter property) -->
         <!-- <img [src]="imagePath" alt="selectedUser.name"> -->
 
