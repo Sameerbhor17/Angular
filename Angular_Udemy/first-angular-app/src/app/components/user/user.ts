@@ -4,6 +4,18 @@
 
 import { Component, computed, EventEmitter, input, Input, output, Output } from '@angular/core';
 
+// type Users = {
+//   id: string;
+//   avatar: string;
+//   name: string;
+// }
+
+interface Users {
+  id: string;
+  avatar: string;
+  name: string;
+}
+
 @Component({
   selector: 'app-user',
   imports: [],
@@ -11,9 +23,10 @@ import { Component, computed, EventEmitter, input, Input, output, Output } from 
   styleUrl: './user.scss',
 })
 export class User {
-  @Input({required: true}) id!: string;
-  @Input({required: true}) avatar!: string;
-  @Input({required: true}) name !: string;
+  // @Input({required: true}) id!: string;
+  // @Input({required: true}) avatar!: string;
+  // @Input({required: true}) name !: string;
+  @Input({required: true}) user !: Users;
   @Output() select = new EventEmitter<string>();
 
   // avatar = input.required<string>();
@@ -30,7 +43,8 @@ export class User {
   //getters property(not a function) in Angular
   get imagePath() {
     // return 'assets/users/' + this.selectedUser.avatar;
-    return 'assets/users/' + this.avatar;
+    // return 'assets/users/' + this.avatar;
+    return 'assets/users/' + this.user.avatar;
   }
 
   //User selection method
@@ -42,6 +56,7 @@ export class User {
   // }
 
   onSelectUser() {
-    this.select.emit(this.id);
+    // this.select.emit(this.id);
+    this.select.emit(this.user.id);
   }
 }

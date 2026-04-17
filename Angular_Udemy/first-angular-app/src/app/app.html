@@ -2,7 +2,12 @@
 
 <main>
     <ul id="users">
-        <li>
+        @for(user of users; track user.id) {
+            <li>
+                <app-user [user]="user" (select)="onSelectUser($event)" />
+            </li>
+        }
+        <!-- <li>
             <app-user [id]="users[0].id" [avatar]="users[0].avatar" [name]="users[0].name" (select)="onSelectUser($event)" />
         </li>
         <li>
@@ -19,7 +24,7 @@
         </li>
         <li>
             <app-user [id]="users[5].id" [avatar]="users[5].avatar" [name]="users[5].name" (select)="onSelectUser($event)" />
-        </li>
+        </li> -->
     </ul>
-    <app-tasks [name]="selectedUser?.name"/>
+    <app-tasks [name]="selectedUser ? selectedUser.name : ''"/>
 </main>
